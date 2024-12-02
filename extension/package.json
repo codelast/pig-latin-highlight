@@ -1,0 +1,51 @@
+{
+  "name": "pig-latin-highlight",
+  "displayName": "Apache Pig Latin Syntax Highlighter",
+  "description": "Syntax highlighting for Apache Pig Latin",
+  "version": "0.1.0",
+  "publisher": "codelast.com",
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codelast/pig-latin-highlight.git"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "pig",
+    "apache pig",
+    "pig latin",
+    "syntax",
+    "highlight"
+  ],
+  "activationEvents": [
+    "onLanguage:pig"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "pig",
+      "aliases": ["Apache Pig Latin", "pig"],
+      "extensions": [".pig"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pig",
+      "scopeName": "source.pig",
+      "path": "./syntaxes/pig.tmLanguage.json"
+    }]
+  },
+  "files": [
+    "README.md",
+    "images/**",
+    "syntaxes/**",
+    "language-configuration.json",
+    "icon.png",
+    "extension.js"
+  ]
+}
