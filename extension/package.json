@@ -3,7 +3,7 @@
   "displayName": "Apache Pig Latin Syntax Highlighter",
   "description": "Syntax highlighting for Apache Pig Latin",
   "version": "0.1.0",
-  "publisher": "codelast.com",
+  "publisher": "codelast",
   "license": "MIT",
   "icon": "icon.png",
   "repository": {
